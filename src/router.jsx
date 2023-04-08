@@ -9,7 +9,14 @@ export const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
-      { path: "/", element: <Home /> },
+      {
+        path: "/",
+        element: <Home/>,
+        loader: async () =>
+         await fetch(
+            "tshirts.json"
+          ),
+      },
       { path: "about", element: <About /> },
       { path: "cart", element: <Cart /> },
     ],
