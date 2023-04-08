@@ -1,9 +1,10 @@
 import React from 'react';
+import Granpa from './Granpa';
 
 const About = () => {
     return (
-        <div>
-            <h1>About</h1>
+        <div className='flex justify-center items-center h-[90vh]'>
+            <Granpa></Granpa>
         </div>
     );
 };
